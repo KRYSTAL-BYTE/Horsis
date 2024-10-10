@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Vehículo</title>
+    <link rel="stylesheet" href="welcome.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Buscar Vehículo</h2>
+        <form action="welcome.php" method="post"> <!-- Cambiado a welcome.php para procesar el formulario -->
+            <label for="plate">Código de placa:</label>
+            <input type="text" id="plate" name="plate" required>
+            <input type="submit" value="Buscar">
+        </form>
+        <div class="button-container">
+            <a href="gestion.html" class="button-back">Volver al menú</a>
+            <a href="/prueba/login/index.html" class="button-logout">Salir</a>
+        </div>
+    </div>
+</body>
+</html>

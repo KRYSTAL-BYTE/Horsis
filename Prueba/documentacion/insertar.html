@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Vehículos y Clientes</title>
+    <link rel="stylesheet" href="insertar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Vehículo y Cliente</h1>
+
+        <form action="insertar.php" method="POST">
+            <div class="form-group">
+                <h2>Datos del Cliente</h2>
+                <label for="DOCUMENTO_ID">Documento de Identificación:</label>
+                <input type="text" id="DOCUMENTO_ID" name="DOCUMENTO_ID" required>
+
+                <label for="NOMBRE">Nombre:</label>
+                <input type="text" id="NOMBRE" name="NOMBRE" required>
+
+                <label for="APELLIDO">Apellido:</label>
+                <input type="text" id="APELLIDO" name="APELLIDO" required>
+
+                <label for="FECHA_EXPE">Fecha de Expedición:</label>
+                <input type="date" id="FECHA_EXPE" name="FECHA_EXPE" required>
+
+                <label for="FECHA_NACI">Fecha de Nacimiento:</label>
+                <input type="date" id="FECHA_NACI" name="FECHA_NACI" required>
+
+                <label for="LUGAR_EXPE">Lugar de Expedición:</label>
+                <input type="text" id="LUGAR_EXPE" name="LUGAR_EXPE" required>
+
+                <label for="TIPO_SANG">Tipo de Sangre:</label>
+                <input type="text" id="TIPO_SANG" name="TIPO_SANG" required>
+            </div>
+
+            <div class="form-group">
+                <h2>Datos del Vehículo</h2>
+                <label for="CODIGO">Código de la Placa:</label>
+                <input type="text" id="CODIGO" name="CODIGO" required>
+
+                <label for="COLOR">Color:</label>
+                <input type="text" id="COLOR" name="COLOR" required>
+
+                <label for="TIPO">Tipo de Vehículo:</label>
+                <input type="text" id="TIPO" name="TIPO" required>
+
+                <label for="MODELO">Modelo:</label>
+                <input type="text" id="MODELO" name="MODELO" required>
+
+                <label for="NOVEDAD">Novedad:</label>
+                <textarea id="NOVEDAD" name="NOVEDAD"></textarea>
+            </div>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+
+    <div class="button-container">
+        <a class="btn-menu" href="/Prueba/consulta/gestion.html">Volver al menú</a>
+        <a class="btn-exit" href="/prueba/login/index.html">Salir</a>
+    </div>
+</body>
+</html>

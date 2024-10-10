@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; /* Necesario para posicionar el botón de salir en la esquina */
+}
+
+.welcome-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff; /* Blanco para el texto del mensaje */
+    background-color: #333333; /* Gris oscuro para el fondo del mensaje */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button-consult {
+    background-color: #28a745; /* Verde para el botón Consultar */
+}
+
+.button-consult:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el cursor */
+}
+
+.button-update {
+    background-color: #007bff; /* Azul para el botón Actualizar */
+}
+
+.button-update:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+.button-logout {
+    position: absolute; /* Posiciona el botón en la esquina inferior derecha */
+    bottom: 20px;
+    right: 20px;
+    background-color: #dc3545; /* Rojo para el botón Salir */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.button-logout:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el cursor */
+}

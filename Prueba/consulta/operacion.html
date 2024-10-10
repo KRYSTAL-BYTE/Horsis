@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario</title>
+    <link rel="stylesheet" href="operacion.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Panel de Edición</h2>
+        <div class="modules">
+            <!-- Formulario para enviar el código de placa a propietario.php -->
+            <form action="/prueba/documentacion/insertar.html" method="get">
+                <input type="hidden" name="codigo" value="<?php echo $_SESSION['plateCode']; ?>">
+                <button type="submit" class="btn-propietario">Insertar</button>
+            </form>
+            <!-- Formulario para enviar el código de placa a vehiculo.php -->
+            <form action="/prueba/documentacion/actualizar.php" method="get">
+                <input type="hidden" name="codigo" value="<?php echo $_SESSION['plateCode']; ?>">
+                <button type="submit" class="btn-vehiculo">Actualizar</button>
+            </form>
+            <!-- Formulario para enviar el código de placa a informe.php -->
+            <form action="/prueba/documentacion/eliminar.html" method="get">
+                <input type="hidden" name="codigo" value="<?php echo $_SESSION['plateCode']; ?>">
+                <button type="submit" class="btn-informe">Eliminar</button>
+            </form>
+        </div>
+        <div class="button-container">
+            <a href="/prueba/consulta/welcomed.html" class="button">Volver</a>
+            <a href="/prueba/login/index.html" class="button-logout">Salir</a>
+        </div>
+    </div>
+</body>
+</html>

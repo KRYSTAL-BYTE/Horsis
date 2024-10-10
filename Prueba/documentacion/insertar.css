@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Permite la posición absoluta de los botones */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333333; /* Color de fondo del recuadro */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Color del texto dentro del recuadro */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Color del texto del título */
+}
+
+h2 {
+    color: #ddd; /* Color del texto de los subtítulos */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ddd; /* Color del texto de las etiquetas */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    border: 1px solid #555; /* Color del borde de los campos de entrada */
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #444; /* Color de fondo de los campos de entrada */
+    color: #fff; /* Color del texto dentro de los campos de entrada */
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+    background-color: #c82333;
+}
+
+.button-container .btn-menu {
+    background-color: #dc3545; /* Color rojo */
+}
+
+.button-container .btn-menu:hover {
+    background-color: #c82333; /* Color rojo más oscuro */
+}
+
+.button-container .btn-exit {
+    background-color: #dc3545; /* Color rojo */
+}
+
+.button-container .btn-exit:hover {
+    background-color: #c82333; /* Color rojo más oscuro */
+}
